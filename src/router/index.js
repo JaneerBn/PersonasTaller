@@ -7,6 +7,8 @@ import NewComuna from '@/components/NewComuna.vue'
 import EditarMunicipio from '@/components/EditarMunicipio.vue'
 import NewMunicipio from '@/components/NewMunicipio.vue'
 import Municipios from '@/views/Municipios.vue'
+import NewDepartamento from '@/components/NewDepartamento.vue'
+import EditarDepartamento from '@/components/EditarDepartamento.vue'
 
 const routes = [
   {
@@ -26,39 +28,47 @@ const routes = [
     path: '/comunas',
     name: 'Comunas',
     component: Comunas
-    },
-    {
-      path: '/editar-comuna/:id',
-      name: 'EditarComuna',
-      component: EditarComuna
-    },
-    {
-      path: '/add-comuna/',
-      name: 'NewComuna',
-      component: NewComuna
-    },
-    {
-       path: '/municipios',
-       name: 'Municipios',
-       component: Municipios
-    },
-    {
-      path: '/editar-municipio/:id',
-      name: 'EditarMunicipio',
-      component: EditarMunicipio
-    },
-    {
-      path: '/add-municipio/',
-      name: 'NewMunicipio',
-      component: NewMunicipio
-    },
-    {
-      path: '/departamentos/',
-      name: 'Departamentos',
-      component: Departamentos
-    }
-
-
+    }, 
+  {
+    path: '/editar-comuna/:id',
+    name: 'EditarComuna',
+    component: EditarComuna
+  },
+  {
+    path: '/add-comuna/',
+    name: 'NewComuna',
+    component: NewComuna
+  },
+  {
+    path: '/municipios',
+    name: 'Municipios',
+    component: Municipios
+  },
+  {
+    path: '/editar-municipio/:id',
+    name: 'EditarMunicipio',
+    component: EditarMunicipio
+  },
+  {
+    path: '/add-municipio/',
+    name: 'NewMunicipio',
+    component: NewMunicipio
+  },
+  {
+    path: '/departamentos/',
+    name: 'Departamentos',
+    component: Departamentos
+  },
+  {
+    path: '/add-departamento/',
+    name: 'NewDepartamento',
+    component: NewDepartamento
+  },
+  {
+    path: '/editar-departamento/:id',
+    name: 'EditarDepartamento',
+    component: EditarDepartamento
+  },
 ]
 
 const router = createRouter({
