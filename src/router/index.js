@@ -9,6 +9,7 @@ import NewMunicipio from '@/components/NewMunicipio.vue'
 import Municipios from '@/views/Municipios.vue'
 import NewDepartamento from '@/components/NewDepartamento.vue'
 import EditarDepartamento from '@/components/EditarDepartamento.vue'
+import Paises from '@/views/Paises.vue'
 
 const routes = [
   {
@@ -69,6 +70,11 @@ const routes = [
     name: 'EditarDepartamento',
     component: EditarDepartamento
   },
+  {
+     path: '/paises/',
+     name: 'Paises',
+     component: Paises
+  }
 ]
 
 const router = createRouter({
