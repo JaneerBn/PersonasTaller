@@ -47,7 +47,7 @@ export default {
     }
   },
   methods: {
-    deleteDepartamento(codigo) {
+       deleteDepartamento(codigo) {
             Swal.fire({
                 title: `Do you want to delete the Departamento with id ${codigo}?`,
                 showCancelButton: true,
@@ -64,8 +64,8 @@ export default {
                             }
                         })
                 }
-      })
-    },
+            })
+        },
     editDepartamento(id) {
       this.$router.push({ name: 'EditarDepartamento', params: { id: `${id}` } })
     },
